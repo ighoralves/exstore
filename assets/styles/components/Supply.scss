@@ -1,0 +1,55 @@
+.Supply {
+  position: relative;
+  top: 530px;
+  
+
+  &-text {
+    color: $black-color;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  &-text2 {
+    color: $black-color;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    text-align: center;
+    width: 500px;
+  }
+
+  &-cards {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &-card {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 167px;
+      padding: 0 10px;
+      width: 250px;
+    
+    figure {
+      background: $ice-color;
+      border-radius: 50%;
+      padding: 20px 1px;
+      width: 80px;
+    }
+  }
+
+  &-text3 {
+    color: $black-color;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%;
+    margin-top: 21px;
+  }
+}

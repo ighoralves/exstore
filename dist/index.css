@@ -1,0 +1,391 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+b,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+.Container {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+.Header {
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 999;
+}
+.Header .Mobile {
+  max-width: 100%;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px 0;
+  top: 0;
+}
+.Header-logo {
+  font-size: 28px;
+  font-weight: 600;
+}
+.Header-logo span {
+  color: #3B44F6;
+}
+.Header-logo a {
+  color: #F5F4F9;
+  text-decoration: none;
+}
+.Header .grid {
+  align-items: center;
+  color: #525252;
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  gap: 20px;
+  text-transform: capitalize;
+}
+.Header .grid .Diferentao {
+  cursor: pointer;
+}
+.Header .grid:hover {
+  color: #ffffff;
+}
+.Header .grid a {
+  color: #525252;
+  text-decoration: none;
+}
+.Header .grid a:hover {
+  color: #ffffff;
+}
+.Header-btns .btn1 {
+  background: #3B44F6;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  height: 38px;
+  padding: 8px 16px;
+  width: 90px;
+  cursor: pointer;
+}
+.Header-btns .btn2 {
+  background: transparent;
+  border-radius: 8px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  height: 38px;
+  padding: 8px 16px;
+  width: 90px;
+  cursor: pointer;
+}
+.Header .toggle {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .Header .menu {
+    display: none;
+  }
+  .Header .toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  .Header nav .icon-cross {
+    position: relative;
+    right: 0;
+    display: black;
+    animation: animacao 0.5s linear;
+  }
+  @keyframes animacao {
+    from {
+      transform: translatey(-40px);
+    }
+    to {
+      transform: translatey(0);
+    }
+  }
+  .Header nav.show div.icon-cross {
+    opacity: 1;
+    top: 0;
+    display: block;
+  }
+  .Header .icon-menu {
+    display: block;
+  }
+  .Header nav.show .icon-menu {
+    display: none;
+  }
+  .Header nav.show .menu {
+    background: #181818;
+    border-radius: 8px 0 0 8px;
+    display: block;
+    height: 200px;
+    padding: 60px 0;
+    position: absolute;
+    right: 22px;
+    top: 60px;
+    width: 40%;
+  }
+  .Header nav.show .menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .Header nav.show ul.grid {
+    gap: 4rem;
+  }
+  .Header-btns {
+    display: flex;
+    gap: 10px;
+  }
+  .Header-btns .btn1 {
+    background: #3B44F6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    height: 35px;
+    padding: 8px 16px;
+    width: 80px;
+  }
+  .Header-btns .btn2 {
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    color: #ffffff;
+    height: 35px;
+    padding: 8px 16px;
+    width: 80px;
+  }
+  .Header .Mobile-menuMobile {
+    display: block;
+  }
+}
+
+.Hero-banner img {
+  height: 750px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.Hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  position: relative;
+  top: 200px;
+}
+.Hero-content .btn3 {
+  background: #3B44F6;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  height: 59px;
+  width: 162px;
+}
+.Hero-text {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 600px;
+  margin-bottom: 17px;
+}
+.Hero-text2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500px;
+}
+
+.Supply {
+  position: relative;
+  top: 530px;
+}
+.Supply-text {
+  color: #181818;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.Supply-text2 {
+  color: #181818;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  text-align: center;
+  width: 500px;
+}
+.Supply-cards {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.Supply-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 167px;
+  padding: 0 10px;
+  width: 250px;
+}
+.Supply-card figure {
+  background: #D8DAFD;
+  border-radius: 50%;
+  padding: 20px 1px;
+  width: 80px;
+}
+.Supply-text3 {
+  color: #181818;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  margin-top: 21px;
+}
+
+/*# sourceMappingURL=index.css.map */

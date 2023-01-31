@@ -1,0 +1,50 @@
+.Hero {
+  
+  &-banner {
+    
+    img {
+      height: 750px;
+      left: 0;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    position: relative;
+    top: 200px;
+
+    .btn3 {
+      background: $blue-color;
+      color: $white-color;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 400;
+      height: 59px; 
+      width: 162px;
+    }
+  }
+
+  &-text {
+    color: $white-color;
+    font-size: 48px;
+    font-weight: 600px;
+    margin-bottom: 17px;
+  }
+
+  &-text2 {
+    color: $white-color;
+    font-size: 24px;
+    font-weight: 500px;
+  }
+
+  
+
+}

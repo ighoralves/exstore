@@ -1,0 +1,88 @@
+.Header {
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 999;
+  
+  .Mobile{
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 0;
+    top: 0;
+    
+    
+  }
+
+  &-logo {
+    font-size: 28px;
+    font-weight: 600;
+    
+    span {
+      color: $blue-color;
+    }
+
+    a {
+      color: $white-light-color;
+      text-decoration: none;
+    }
+  }
+
+  .grid {
+    align-items: center;
+    color: $gray-color;
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 20px;
+    text-transform: capitalize;
+
+    .Diferentao {
+      cursor: pointer;
+    }
+    
+    &:hover {
+      color: $white-color;
+    }
+
+    a {
+      color: $gray-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $white-color;
+      }
+    }
+  }
+
+  &-btns {
+    .btn1 {
+      background: $blue-color;
+      border: none;
+      border-radius: 8px;
+      color: $white-color;
+      height: 38px;
+      padding: 8px 16px;
+      width: 90px;
+      cursor: pointer;
+
+
+    }
+    .btn2 {
+      background: transparent;
+      border-radius: 8px;
+      color: $white-color;
+      border: 1px solid $white-color;
+      height: 38px;
+      padding: 8px 16px;
+      width: 90px;
+      cursor: pointer;
+    }
+  }
+
+  .toggle {
+    display: none;
+  }
+}
