@@ -1,0 +1,74 @@
+.Best {
+  position: relative;
+  top: 750px;
+
+  .swiper {
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide {
+    background: $white-color;
+    width: 235px !important;
+    height: 230px !important;
+    box-shadow: 0px 8px 10px rgba(164, 164, 164, 0.07);
+    padding: 10px;
+    // overflow: hidden;
+
+
+    img {
+      display: block;
+      width: 230px;
+      height: 220px;
+      object-fit: cover;
+    }
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 36px;
+    color: $black-color;
+    margin-bottom: 28px;
+  }
+
+  &-text {
+    font-weight: 600;
+    font-size: 20px;
+    color: $black-color;
+    margin-top: 15px;
+    // margin-bottom: 17px;
+  }
+
+  &-text2 {
+    font-size: 16px;
+    color: $blue-color;
+    
+  }
+
+  &-text3 {
+    background: rgba(252, 50, 111, 0.2);
+    padding: 3px;
+    font-size: 12px;
+    color: #FC326F;
+  }
+
+  &-text4 {
+    font-size: 14px;
+    color: $gray-color;
+  }
+
+  &-texts{
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-texts1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}

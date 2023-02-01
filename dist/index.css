@@ -544,4 +544,65 @@ body {
   }
 }
 
+.Best {
+  position: relative;
+  top: 750px;
+}
+.Best .swiper {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Best .swiper-slide {
+  background: #ffffff;
+  width: 235px !important;
+  height: 230px !important;
+  box-shadow: 0px 8px 10px rgba(164, 164, 164, 0.07);
+  padding: 10px;
+}
+.Best .swiper-slide img {
+  display: block;
+  width: 230px;
+  height: 220px;
+  object-fit: cover;
+}
+.Best-title {
+  font-weight: 600;
+  font-size: 36px;
+  color: #181818;
+  margin-bottom: 28px;
+}
+.Best-text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #181818;
+  margin-top: 15px;
+}
+.Best-text2 {
+  font-size: 16px;
+  color: #3B44F6;
+}
+.Best-text3 {
+  background: rgba(252, 50, 111, 0.2);
+  padding: 3px;
+  font-size: 12px;
+  color: #FC326F;
+}
+.Best-text4 {
+  font-size: 14px;
+  color: #525252;
+}
+.Best-texts {
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Best-texts1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 /*# sourceMappingURL=index.css.map */
