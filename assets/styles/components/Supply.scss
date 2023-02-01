@@ -52,4 +52,15 @@
     line-height: 130%;
     margin-top: 21px;
   }
+
+  @media (max-width: 800px) {
+    &-cards {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &-text2 {
+      max-width: 100%;
+    }
+  }
 }
