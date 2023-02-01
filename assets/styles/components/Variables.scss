@@ -13,10 +13,11 @@ $white-light-color: #F5F4F9;
 
 body {
   font-family: 'Lexend', sans-serif;
+  background: $white-light-color;
 }
 
 .Container {
-  max-width: 1070px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 22px;
+  padding: 0 35px;
 }

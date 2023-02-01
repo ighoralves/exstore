@@ -143,12 +143,13 @@ table {
 
 body {
   font-family: "Lexend", sans-serif;
+  background: #F5F4F9;
 }
 
 .Container {
-  max-width: 1070px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 22px;
+  padding: 0 35px;
 }
 
 .Header {
@@ -378,7 +379,7 @@ body {
   background: #D8DAFD;
   border-radius: 50%;
   padding: 20px 1px;
-  width: 80px;
+  width: 95px;
 }
 .Supply-text3 {
   color: #181818;
@@ -386,6 +387,152 @@ body {
   font-weight: 500;
   line-height: 130%;
   margin-top: 21px;
+}
+
+.Games {
+  position: relative;
+  top: 650px;
+}
+.Games .Container {
+  position: relative;
+}
+.Games-title {
+  color: #181818;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.Games-cards {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.Games-card figure img {
+  border-radius: 8px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.Games-text1 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 65%;
+}
+.Games-text2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  left: 25%;
+  position: absolute;
+  top: 65%;
+  transform: translate(-50%, -50%);
+}
+.Games-text3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  left: 42%;
+  position: absolute;
+  top: 65%;
+  transform: translate(-50%, -50%);
+}
+.Games-text4 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  left: 58%;
+  position: absolute;
+  top: 65%;
+  transform: translate(-50%, -50%);
+}
+.Games-text5 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  left: 74%;
+  position: absolute;
+  top: 65%;
+  transform: translate(-50%, -50%);
+}
+.Games-text6 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 90%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 1100px) {
+  .Games-cards {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .Games-card {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .Games-text1 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    left: 50%;
+    position: absolute;
+    top: 42%;
+    transform: translate(-50%, -50%);
+  }
+  .Games-text2 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    left: 46%;
+    position: absolute;
+    top: 42%;
+    transform: translate(-50%, -50%);
+  }
+  .Games-text3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    left: 50%;
+    position: absolute;
+    top: 42%;
+    transform: translate(-50%, -50%);
+  }
+  .Games-text4 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    left: 50%;
+    position: absolute;
+    top: 42%;
+    transform: translate(-50%, -50%);
+  }
+  .Games-text5 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    left: 46%;
+    position: absolute;
+    top: 42%;
+    transform: translate(-50%, -50%);
+  }
+  .Games-text6 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    left: 46%;
+    position: absolute;
+    top: 42%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
