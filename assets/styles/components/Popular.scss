@@ -1,0 +1,53 @@
+.Popular {
+  position: relative;
+  top: 850px;
+
+  &-title {
+    font-weight: 600;
+    font-size: 36px;
+    color: $black-color;
+    margin-bottom: 28px;
+    // text-align: center;
+  }
+
+  &-cards {
+    display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+
+  &-card {
+    width: 232px;
+    height: 290px;
+    background-color: $white-color;
+    padding: 10px;
+  }
+
+  @media (max-width: 600px) {
+    &-cards {
+      grid-gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 400px) {
+
+    &-title {
+      font-weight: 600;
+      font-size: 36px;
+      color: $black-color;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+
+    &-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      // text-align: center;
+      max-width: 100%;
+      // background: red;
+      align-items: center;
+    }
+  }
+}

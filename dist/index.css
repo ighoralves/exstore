@@ -549,7 +549,6 @@ body {
   top: 750px;
 }
 .Best .swiper {
-  max-width: 1100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -557,7 +556,6 @@ body {
 .Best .swiper-slide {
   background: #ffffff;
   width: 235px !important;
-  height: 230px !important;
   box-shadow: 0px 8px 10px rgba(164, 164, 164, 0.07);
   padding: 10px;
 }
@@ -566,6 +564,11 @@ body {
   width: 230px;
   height: 220px;
   object-fit: cover;
+}
+.Best .swiper-horizontal > .swiper-pagination-bullets,
+.Best .swiper-pagination-bullets.swiper-pagination-horizontal,
+.Best .swiper-pagination-custom, .Best .swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, -1px);
 }
 .Best-title {
   font-weight: 600;
@@ -603,6 +606,50 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.Popular {
+  position: relative;
+  top: 850px;
+}
+.Popular-title {
+  font-weight: 600;
+  font-size: 36px;
+  color: #181818;
+  margin-bottom: 28px;
+}
+.Popular-cards {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+.Popular-card {
+  width: 232px;
+  height: 290px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .Popular-cards {
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .Popular-title {
+    font-weight: 600;
+    font-size: 36px;
+    color: #181818;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+  .Popular-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
