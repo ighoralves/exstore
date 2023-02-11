@@ -164,4 +164,19 @@
     }
   }
 
+  @media (max-width: 550px) {
+    &-title {
+      text-align: center;
+      font-size: 28px;
+    }
+
+    &-card {
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+
 }

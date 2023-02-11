@@ -34,29 +34,26 @@
     
     .icon-menu {
       display: block;
+      animation: animacao 0.5s linear;
     }
 
     nav.show {
-      // transform: translateX(0%);
+      
       .icon-menu {
         display: none;
       }
     }
     
     nav.show .menu {
-      // transition: 0.6s;
-      // transform: translatex(20%);
       background: $black-color;
       border-radius: 8px 0 0 8px;
       display: block;
-      height: 200px;
+      height: 500px;
       padding: 60px 0;
       position: absolute;
-      right: 22px;
+      right: 0;
       top: 60px;
       width: 40%;
-      
-  
     }
     
     nav.show .menu ul {
@@ -68,35 +65,9 @@
       gap: 4rem;
     }
 
-    &-btns {
-      display: flex;
-      gap: 10px;
-
-
-      .btn1 {
-        background: $blue-color;
-        color: $white-color;
-        border: none;
-        border-radius: 8px;
-        height: 35px;
-        padding: 8px 16px;
-        width: 80px;
-      }
-
-      .btn2 {
-        background: transparent;
-        border: 1px solid $white-color;
-        border-radius: 8px;
-        color: $white-color;
-        height: 35px;
-        padding: 8px 16px;
-        width: 80px;
-      }
-
-    }
-
     .Mobile {
       &-menuMobile {
+        
         display: block;
       }
     }

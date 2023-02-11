@@ -223,6 +223,11 @@ body {
 .Header .toggle {
   display: none;
 }
+@media (max-width: 800px) {
+  .Header-btns {
+    display: none;
+  }
+}
 
 @media (max-width: 800px) {
   .Header .menu {
@@ -253,6 +258,7 @@ body {
   }
   .Header .icon-menu {
     display: block;
+    animation: animacao 0.5s linear;
   }
   .Header nav.show .icon-menu {
     display: none;
@@ -261,10 +267,10 @@ body {
     background: #181818;
     border-radius: 8px 0 0 8px;
     display: block;
-    height: 200px;
+    height: 500px;
     padding: 60px 0;
     position: absolute;
-    right: 22px;
+    right: 0;
     top: 60px;
     width: 40%;
   }
@@ -274,28 +280,6 @@ body {
   }
   .Header nav.show ul.grid {
     gap: 4rem;
-  }
-  .Header-btns {
-    display: flex;
-    gap: 10px;
-  }
-  .Header-btns .btn1 {
-    background: #3B44F6;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    height: 35px;
-    padding: 8px 16px;
-    width: 80px;
-  }
-  .Header-btns .btn2 {
-    background: transparent;
-    border: 1px solid #ffffff;
-    border-radius: 8px;
-    color: #ffffff;
-    height: 35px;
-    padding: 8px 16px;
-    width: 80px;
   }
   .Header .Mobile-menuMobile {
     display: block;
@@ -543,32 +527,35 @@ body {
     transform: translate(-50%, -50%);
   }
 }
+@media (max-width: 550px) {
+  .Games-title {
+    text-align: center;
+    font-size: 28px;
+  }
+  .Games-card {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+  }
+}
 
 .Best {
   position: relative;
   top: 750px;
 }
-.Best .swiper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Best-cards {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
-.Best .swiper-slide {
+.Best-card {
   background: #ffffff;
-  width: 235px !important;
-  box-shadow: 0px 8px 10px rgba(164, 164, 164, 0.07);
-  padding: 10px;
-}
-.Best .swiper-slide img {
-  display: block;
   width: 230px;
-  height: 220px;
-  object-fit: cover;
-}
-.Best .swiper-horizontal > .swiper-pagination-bullets,
-.Best .swiper-pagination-bullets.swiper-pagination-horizontal,
-.Best .swiper-pagination-custom, .Best .swiper-pagination-fraction {
-  bottom: var(--swiper-pagination-bottom, -1px);
+  height: 300px;
+  padding: 10px;
+  top: 0px;
 }
 .Best-title {
   font-weight: 600;
@@ -607,6 +594,36 @@ body {
   align-items: center;
   gap: 5px;
 }
+@media (max-width: 1000px) {
+  .Best-cards {
+    margin: 0 auto;
+    width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .Best-title {
+    font-size: 28px;
+    text-align: center;
+  }
+  .Best-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    width: 250px;
+  }
+  .Best-text {
+    font-size: 18px;
+  }
+  .Best-text2 {
+    font-size: 14px;
+  }
+  .Best-text3 {
+    font-size: 10px;
+  }
+  .Best-text4 {
+    font-size: 12px;
+  }
+}
 
 .Popular {
   position: relative;
@@ -622,6 +639,7 @@ body {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  margin: 0 auto;
 }
 .Popular-card {
   width: 232px;
@@ -635,10 +653,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .Popular-title {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 28px;
     color: #181818;
     margin-bottom: 28px;
     text-align: center;
@@ -650,6 +668,54 @@ body {
     max-width: 100%;
     align-items: center;
   }
+}
+
+.Coming {
+  position: relative;
+  top: 900px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+.Coming-title {
+  color: #fff;
+}
+.Coming-grids {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%;
+}
+.Coming-grid_1 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 4;
+}
+.Coming-grid_2 {
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-row-end: 7;
+  grid-column-end: 4;
+}
+.Coming-grid_3 {
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-row-end: 3;
+  grid-column-end: 6;
+}
+.Coming-grid_4 {
+  grid-row-start: 3;
+  grid-column-start: 4;
+  grid-row-end: 5;
+  grid-column-end: 6;
+}
+.Coming-grid_5 {
+  grid-row-start: 5;
+  grid-column-start: 4;
+  grid-row-end: 7;
+  grid-column-end: 6;
 }
 
 /*# sourceMappingURL=index.css.map */
