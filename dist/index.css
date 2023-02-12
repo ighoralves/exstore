@@ -272,11 +272,13 @@ body {
     position: absolute;
     right: 0;
     top: 60px;
-    width: 40%;
+    width: 50%;
   }
   .Header nav.show .menu ul {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .Header nav.show ul.grid {
     gap: 4rem;
@@ -675,17 +677,91 @@ body {
   top: 900px;
   height: 100%;
   width: 100%;
-  background: #000;
+  background: #181818;
 }
 .Coming-title {
-  color: #fff;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 600;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
 }
 .Coming-grids {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px;
+  gap: 10px;
+  max-width: 100%;
   height: 100%;
+}
+.Coming-back {
+  position: relative;
+}
+.Coming-texts_1 {
+  position: absolute;
+  top: 300px;
+  padding: 0 22px;
+}
+.Coming-texts_2 {
+  position: absolute;
+  top: 750px;
+  padding: 0 22px;
+}
+.Coming-texts_3 {
+  position: absolute;
+  top: 190px;
+  padding: 0 22px;
+}
+.Coming-texts_4 {
+  position: absolute;
+  top: 450px;
+  padding: 0 22px;
+}
+.Coming-texts_5 {
+  position: absolute;
+  top: 750px;
+  padding: 0 22px;
+}
+.Coming-text1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 140%;
+  text-shadow: 0px 4px 5px #000;
+  margin-bottom: 32px;
+}
+.Coming-text2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 140%;
+  text-shadow: 0px 4px 5px #000;
+  margin-bottom: 32px;
+}
+.Coming-text3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+  text-shadow: 0px 4px 5px #000;
+  margin-bottom: 24px;
+}
+.Coming-text4 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+  text-shadow: 0px 4px 5px #000;
+  margin-bottom: 24px;
+}
+.Coming-text5 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+  text-shadow: 0px 4px 5px #000;
+  margin-bottom: 24px;
 }
 .Coming-grid_1 {
   grid-row-start: 1;
@@ -716,6 +792,14 @@ body {
   grid-column-start: 4;
   grid-row-end: 7;
   grid-column-end: 6;
+}
+.Coming-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #F5F4F9;
+  border-radius: 8px;
+  padding: 9px 16px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -53,16 +53,21 @@
       position: absolute;
       right: 0;
       top: 60px;
-      width: 40%;
+      width: 50%;
     }
     
     nav.show .menu ul {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
     }
     
     nav.show ul.grid {
       gap: 4rem;
+     
+      
     }
 
     .Mobile {
