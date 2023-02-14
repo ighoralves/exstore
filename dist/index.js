@@ -12803,21 +12803,13 @@ var swiper = new _swiper.default(".mySwiper", {
     prevEl: ".swiper-button-prev"
   }
 });
-},{"swiper":"../node_modules/swiper/swiper.esm.js"}],"javascript/sobreposto.js":[function(require,module,exports) {
-var imagem = document.getElementById("#imagem");
-var textoSobreposto = document.querySelector(".sobreposto");
-imagem.addEventListener("load", function () {
-  textoSobreposto.style.height = "".concat(imagem.offsetHeight, "px");
-});
-},{}],"javascript/index.js":[function(require,module,exports) {
+},{"swiper":"../node_modules/swiper/swiper.esm.js"}],"javascript/index.js":[function(require,module,exports) {
 "use strict";
 
 require("./menuMobile");
 
 require("./swiper");
-
-require("./sobreposto");
-},{"./menuMobile":"javascript/menuMobile.js","./swiper":"javascript/swiper.js","./sobreposto":"javascript/sobreposto.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./menuMobile":"javascript/menuMobile.js","./swiper":"javascript/swiper.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -12923,7 +12915,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60870" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64226" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

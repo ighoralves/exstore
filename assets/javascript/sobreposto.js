@@ -1,6 +1,11 @@
-const imagem = document.getElementById("#imagem");
-const textoSobreposto = document.querySelector(".sobreposto");
+// const imagem = document.getElementById("imagem");
+// const textoSobreposto = document.querySelector(".sobreposto");
 
-imagem.addEventListener("load", function () {
-  textoSobreposto.style.height = `${imagem.offsetHeight}px`;
-});
+// function acompanharImagem() {
+//   const posicaoImagem = imagem.getBoundingClientRect();
+//   textoSobreposto.style.top = `${posicaoImagem.top}px`;
+//   textoSobreposto.style.left = `${posicaoImagem.left}px`;
+// }
+
+// imagem.addEventListener("resize", acompanharImagem);
+// window.addEventListener("load", acompanharImagem);
