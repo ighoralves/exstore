@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 
-- [Visite o projeto online](ighoralves.github.io/exstore/)
+- [Visite o projeto online](https://ighoralves.github.io/exstore/)
 
 
 ## :memo: Licença
